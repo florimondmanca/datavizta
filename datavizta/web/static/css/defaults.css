@@ -1,0 +1,29 @@
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--night-blue);
+  margin-bottom: calc(2 * var(--w));
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  margin-bottom: var(--w);
+}
+
+a, a:visited {
+  color: inherit;
+}

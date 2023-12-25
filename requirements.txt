@@ -1,0 +1,10 @@
+# Application dependencies
+fluent.runtime==0.4.0
+jinja2==3.1.2
+punq==0.7.0
+starlette==0.34.0
+watchfiles==0.21.0
+
+# Tooling
+black==23.12.1
+ruff==0.1.9

@@ -1,0 +1,200 @@
+@import './reset.css';
+@import './defaults.css';
+@import './variables.css';
+@import './layouts/index.css';
+@import './components/index.css';
+@import './utilities/index.css';
+
+.github-fork-ribbon:before {
+  /* TODO right-top */
+  background-color: #008a8c;
+}
+
+#switch-language-button {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #008a8c;
+}
+
+#std_menu {
+  color: #008a8c;
+  /* position: relative; */
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+#burger_menu {
+  display: none;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0;
+  min-width: 50vw;
+  max-width: 60vw;
+  height: 100vh;
+  z-index: 99;
+}
+
+#burger_icon {
+  display: none;
+  position: relative;
+  margin-right: -5px;
+  margin-left: auto;
+  width: 33px;
+  height: 28px;
+  z-index: 100;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 963px) {
+  #burger_menu {
+    display: none;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    min-width: 50vw;
+    max-width: 60vw;
+    height: 100vh;
+    z-index: 99;
+  }
+
+  #switch-language-button {
+    display: none;
+  }
+
+  #std_menu {
+    display: none;
+  }
+
+  #burger_menu ul {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    min-width: 50vw;
+    max-width: 60vw;
+    height: 100vh;
+    padding: 82px 0 0;
+
+    text-align: center;
+
+    background: #008a8c;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #burger_menu li {
+    padding: 12px 24px;
+    color: #fff;
+    font-size: x-large;
+    font-weight: 700;
+    list-style: none;
+  }
+
+  #burger_menu a {
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* ******************** HAMBURGER ICON ******************** */
+  /* define size and position of the hamburger link */
+  #burger_icon {
+    display: block;
+    position: relative;
+    margin-right: -5px;
+    margin-left: auto;
+    width: 33px;
+    height: 28px;
+
+    z-index: 100;
+
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  /* define the style (size, color, position, animation, ...) of the 3 spans */
+  #burger_icon span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 5px;
+
+    background: #008a8c;
+    border-radius: 3px;
+
+    z-index: 100;
+
+    opacity: 1;
+    left: 0;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  /* set the 3 spans position to look like a hamburger */
+  #burger_icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+  }
+
+  #burger_icon span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+
+  #burger_icon span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+  }
+
+  /* the first span rotates 45° \ */
+  #burger_icon.open span:nth-child(1) {
+    width: 110%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* the second span disappears */
+  #burger_icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  /* the last span rotates -45° / */
+  #burger_icon.open span:nth-child(3) {
+    width: 110%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}

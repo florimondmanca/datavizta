@@ -1,0 +1,7 @@
+.d-nav-container {
+  border-block-end: 2px solid var(--teal);
+}
+
+.d-nav-brand {
+  font-size: var(--font-size-brand);
+}

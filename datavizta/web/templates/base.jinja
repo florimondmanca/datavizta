@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Datavizta</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/main.css') }}">
+</head>
+
+<body>
+  <div
+    class="d-nav-container d-container d-cluster d-box"
+    style="--cluster-align: center; --cluster-gap: calc(3 * var(--w)); --box-padding: calc(2 * var(--w)) 0"
+  >
+    <a href="{{ url_for('index') }}" class="d-cluster" style="--cluster-gap: var(--w); --cluster-align: center">
+      <img width="32px" height="47px" src="{{ url_for('static', path='/img/logo_picto_color.png') }}" alt="Boavizta">
+      <p class="d-nav-brand">Datavizta</p>
+    </a>
+    <nav class="d-cluster" style="--cluster-gap: 0; --cluster-align: center">
+      <ul class="d-raw-list d-cluster" role="list" style="--box-padding: calc(2 * var(--w)) var(--w)">
+        <li>
+          <a class="d-box" href="{{ url_for('index') }}">{{ _('nav-home') }}</a>
+        </li>
+        <li>
+          <a class="d-box" href="/serversimpact">{{ _('nav-server-impact') }}</a>
+        </li>
+        <li>
+          <a class="d-box" href="/cloudimpact">{{ _('nav-cloud-impact') }}</a>
+        </li>
+        <li>
+          <a class="d-box" href="/terminalimpact">{{ _('nav-terminal-impact') }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  {% block content %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+:root {
+  --v: 0.25rem;
+  --w: calc(2 * var(--v));
+  
+  --night-blue: #003864;
+  --teal: #01acaf;
+
+  --font-family-default: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+
+  --font-size-default: 0.875rem;
+  --font-size-brand: 1.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+}

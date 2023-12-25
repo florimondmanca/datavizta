@@ -1,0 +1,3 @@
+.d-box {
+  padding: var(--box-padding, 0);
+}
