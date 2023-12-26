@@ -11,4 +11,5 @@ def make_routes():
     return [
         Mount(settings.STATIC_ROOT, static, name="static"),
         Route("/", views.index, name="index"),
+        Route("/terminal_impact", views.terminal_impact, name="terminal_impact"),
     ]

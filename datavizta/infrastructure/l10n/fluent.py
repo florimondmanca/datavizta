@@ -3,8 +3,10 @@ from fluent.runtime import FluentLocalization, FluentResourceLoader
 
 from ... import settings
 
+TranslateFunc = Callable[[str], str]
 
-def make_translate(roots: list[str]) -> Callable[[str], str]:
+
+def make_translate(roots: list[str]) -> TranslateFunc:
     loader = FluentResourceLoader(roots)
 
     def _make_l10n():

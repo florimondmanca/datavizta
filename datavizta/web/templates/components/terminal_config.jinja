@@ -1,0 +1,40 @@
+<div class="d-stack" style="--stack-gap: calc(2 * var(--w))">
+  <div class="d-select-group">
+    <label for="category">
+      {{ _('terminal-config.category') }}
+    </label>
+    <select id="category" name="category">
+      {% for option in categories %}
+        <option value="{{ option.value }}" {% if category == option.value %}selected{% endif %}>
+          {{ option.label }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="d-select-group">
+    <label for="subcategory">
+      {{ _('terminal-config-subcategory') }}
+    </label>
+    <select id="subcategory" name="subcategory">
+      {% for option in subcategories %}
+          <option value="{{ option.value }}" {% if subcategory == option.value %}selected{% endif %}>
+            {{ option.label }}
+          </option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="d-select-group">
+    <label for="archetype">
+      {{ _('terminal-config-archetype') }}
+    </label>
+    <select id="archetype" name="archetype">
+      {% for option in archetypes %}
+          <option value="{{ option.value }}" {% if archetype == option.value %}selected{% endif %}>
+            {{ option.label }}
+            </option>
+      {% endfor %}
+    </select>
+  </div>
+</div>

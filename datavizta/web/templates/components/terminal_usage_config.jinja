@@ -1,0 +1,17 @@
+<div class="d-stack" style="--stack-gap: calc(2 * var(--w))">
+  <div class="d-select-group">
+    <label for="region">{{ _('usage-config-region') }}</label>
+    <select name="region" id="region">
+      {% for option in regions %}
+        <option value="{{ option.value }}" {% if region == option.value %}selected{% endif %}>
+          {{ option.label }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="d-input-group">
+    <label for="lifespan">{{ _('usage-config-lifespan') }}</label>
+    <input id="lifespan" type="number" min="1" max="15"/>
+  </div>
+</div>

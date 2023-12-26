@@ -1,3 +1,5 @@
+common-form-submit = Envoyer
+
 nav-home = Accueil
 nav-server-impact = Impact des serveurs
 nav-cloud-impact = Impact du Cloud
@@ -30,3 +32,34 @@ index-use-cases-manufacturer-content =
   <p>
     Nous avons décidé de supprimer l'accès aux données d'impacts fournies par les constructeurs car nous avons constaté qu'elles n'étaient pas utilisées à bon escient, malgré nos recommandations. À la place, nous proposons une meilleure alternative pour évaluer les impacts environnementaux des terminaux utilisateurs et des serveurs. Les données brutes restent accessibles sur notre dépôt GitHub ; cependant, veuillez noter qu'elles ne seront plus mises à jour.
   </p>
+
+terminal-impact-title = Impact multicritère des terminaux
+terminal-config = Paramètres
+terminal-config-configuration = Configuration du terminal
+terminal-config-usage = Utilisation du terminal
+terminal-config-category = Catégorie
+terminal-config-terminals = Terminaux
+terminal-config-peripherals = Périphériques
+terminal-config-subcategory = Type
+terminal-config-archetype = Modèle
+usage-config-region = Localisation
+usage-config-lifespan = Durée de vie (années)
+
+impacts-results = Impact multicritère sur la durée de vie totale
+impact-type-gwp = Potentiel de gaz à effet de serre
+impact-type-gwp-description = Évalue l’effet sur le réchauffement de la planète
+impact-type-pe = Énergie primaire
+impact-type-pe-description = Évalue la consommation d'énergie primaire
+impact-type-adpe = Epuisement des ressources abiotiques, minérales et métalliques
+impact-type-adpe-description = Évalue le potentiel d'épuisement des ressources minérales et métalliques
+impact-type-ir = Radiations ionisantes
+impact-type-ir-description = Évalue les emissions de radiations ionisantes
+impact-type-odp = Appauvrissement de la couche d'ozone
+impact-type-odp-description = Évalue l'impact sur la couche d'ozone
+impact-type-ap = Acidification
+impact-type-ap-description = Évalue le potentiel d'acidification
+impact-type-ept = Eutrophisation terrestre
+impact-type-ept-description = Évalue le potentiel d'eutrophisation terrestre
+
+impact-use = Utilisation
+impact-embedded = Fabrication

@@ -1,0 +1,20 @@
+<h3>
+  {{ _('impact-type-' + impact.name) }} ({{ impact.unit }}) - Total : {{ impact.total }}
+</h3>
+
+<p>
+  {{ _('impact-type-' + impact.name + '-description') }}
+</p>
+
+<div class="d-cluster" style="--cluster-gap: calc(2 * var(--w))">
+  {% if impact.use_value %}
+    <div class="d-impact-use">
+      {{ _('impact-use') }} : {{ impact.use_value }}
+    </div>
+  {% endif %}
+  {% if impact.embedded_value %}
+    <div class="d-impact-embedded">
+      {{ _('impact-embedded') }} : {{ impact.embedded_value }}
+    </div>
+  {% endif %}
+</div>

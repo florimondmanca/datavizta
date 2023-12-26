@@ -1,0 +1,36 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+
+<main class="d-box" style="--box-padding: var(--w)">
+  <h1>
+    {{ _('terminal-impact-title') }}
+  </h1>
+
+  <h2>
+    {{ _('terminal-config') }}
+  </h2>
+
+  <form method="GET" class="d-stack" style="--stack-gap: calc(2 * var(--w))">
+    <fieldset>
+      <legend>{{ _('terminal-config-configuration') }}</legend>
+
+      {% include 'components/terminal_config.jinja' %}
+    </fieldset>
+
+    <fieldset>
+      <legend>{{ _('terminal-config-usage') }}</legend>
+
+      {% include 'components/terminal_usage_config.jinja' %}
+    </fieldset>
+
+    <button type="submit">{{ _('common-form-submit') }}</button>
+  </form>
+
+  <h2 class="mb-2 mx-2 text-2xl font-bold">
+    {{ _('impacts-results') }}
+  </h2>
+
+  {% include 'components/results.jinja' %}
+</main>
+{% endblock content %}
